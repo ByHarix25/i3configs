@@ -1,1 +1,1 @@
-# i3configs
+Basic configurations to my system, free to use
