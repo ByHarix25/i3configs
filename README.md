@@ -1,6 +1,6 @@
 Basic configurations to my system, free to use
 
--=-=- HOW TO USE -=-=-
+-=-=- HOW TO USE -=-=-\n
 -- config for i3 
 Put the `config` file in $HOME/.config/i3/
 
