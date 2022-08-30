@@ -19,6 +19,12 @@ Rename the backgrounds to `bg(number)` Example: bg1.jpg, bg2.png, etc
 
 !! FOR NOW IT ONLY WORKS WITH jpg AND png !!
 
+-- .xmobarrc
+
+Paste the file in your $HOME directory (~)
+
+Install xmobar from your package manager
+
 
 These are my local scripts, they may not recieve many updates since
 they are so small. Please fork them with your liking
