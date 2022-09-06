@@ -18,7 +18,7 @@ else:
     print('A monitor could not be found. Keeping the same resolution')
     os.system('xrandr --output eDP --scale-from 1920x1080 > /dev/null')
 
-filedir = os.getcwd()
+filedir = os.path.dirname(os.path.realpath(__file__))
 #Sees if there is a "bg" folder in the folder the file is in
 if not os.path.exists(f'{filedir}/bg/'):
 #If it does not find one, it tries to create one
@@ -37,6 +37,9 @@ if size == 0:
     print('[WARN] No backgrounds in the "bg" folder. Skipping')
     startxmobar()
     exit()
+#Assign global variable with the number of background
+else:
+    os.system(f'export CUSTOMBG={size}')
 bgnum = rd.randint(1, size)
 
 #Try to find the background selected randomly that ends in .jpg or .png
